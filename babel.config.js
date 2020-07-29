@@ -4,7 +4,8 @@ module.exports = {
     ["module-resolver", {
       "root": ["./"],
       "alias": {
-        "@ui": "./ui"
+        "@ui": "./ui",
+        "@theme": "./ui/theme"
       }
     }]
   ]
