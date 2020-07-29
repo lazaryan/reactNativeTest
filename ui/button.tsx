@@ -20,17 +20,24 @@ const defaultProps = {
     disabled: false
 }
 
+const context = { styles: defaultProps.styles }
+
 export const Component: React.SFC<ButtonProps> = (props = defaultProps) => {
+    props.styles && (context.styles = props.styles)
+    
     return (
         <Container>
-            <Button {...props} />
+            <Button {...props}>
+                <ButtonText>{ props.title }</ButtonText>
+            </Button>
         </Container>
     )
 }
 
 Component.defaultProps = defaultProps
 
-export const Container = styled.View`${(props: Props) => props.styles?.container}`;
-export const Button = styled.Button`${(props: ButtonProps) => props.styles?.button}`;
+export const Container = styled.View`${(props: Props) => context.styles.container}`;
+export const Button = styled.TouchableOpacity`${(props: ButtonProps) => context.styles.button}`;
+export const ButtonText = styled.Text`${(props: Props) => context.styles.text}`;
 
 export default Component

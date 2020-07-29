@@ -33,6 +33,7 @@ const App: React.SFC = () => {
           name="Home"
           component={Home}
           options={{
+            title: '',
             headerStyle: {
               height: 0
             }
