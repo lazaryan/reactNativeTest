@@ -1,6 +1,7 @@
 import { default as button, ButtonStyle } from './button'
 import { default as text, TextStyle } from './text'
 import { default as image, ImageStyle } from './image'
+import colors from './colors'
 
 export interface Theme {
     Button: ButtonStyle,
@@ -12,4 +13,5 @@ export default {
     button,
     text,
     image,
+    colors,
 }

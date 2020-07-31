@@ -1,5 +1,5 @@
 import { css } from 'styled-components/native'
-
+import colors from './colors'
 
 export interface ButtonStyle {
     container: any,
@@ -14,8 +14,8 @@ export const container = css`
 `
 
 export const button = css`
-    border-radius: 25px; 
-    background-color: #36D268;
+    border-radius: 100px; 
+    background-color: ${colors.active};
     padding: 12px;
     width: 200px;
 `

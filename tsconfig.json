@@ -12,7 +12,8 @@
     "paths": {
       "@ui": ["./ui/index.ts"],
       "@theme": ["./ui/theme/index.ts"],
-      "@store": ["./store/index.ts"]
+      "@store": ["./store/index.ts"],
+      "@assets": ["./assets"]
     }
   }
 }

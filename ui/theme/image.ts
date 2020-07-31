@@ -5,10 +5,14 @@ export interface ImageStyle {
     image: any,
 }
 
-export const container = css``
+export const container = css`
+    align-items: center;
+    justify-content: center;
+`
 
 export const image = css`
     width: 100%;
+    height: 100%;
 `
 
 export default {

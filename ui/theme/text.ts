@@ -1,5 +1,5 @@
 import { css } from 'styled-components/native'
-
+import colors from './colors'
 
 export interface TextStyle {
     container: any,
@@ -12,7 +12,7 @@ export const container = css`
 
 export const text = css`
     font-family: Roboto;
-    color: #808080;
+    color: ${colors.light};
     font-size: 16px;
 `
 
