@@ -13,11 +13,7 @@ const store = init({
 export const actionHook = (model: string) => async (action: Action) => new Promise((res, rej) => {
     const result = store.dispatch[model][action.type](action.payload)
 
-    if(result && result.then) {
-        result
-            .then(res)
-            .catch(rej)
-    }
+    return result && result.then && result.then(res).catch(rej) || res(result)
 })
 
 export default store

@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
 import { useSelector } from 'react-redux'
-
 import { View } from 'react-native'
-import { Button } from '@ui'
+
+import { Button, Text } from '@ui'
 import { actionHook } from '@store'
 
 export const Component = () => {
@@ -16,7 +16,8 @@ export const Component = () => {
     console.log(state)
 
     return (
-        <View>
+        <View style={{ justifyContent: 'center', height: '100%' }}>
+            <Text style={{ textAlign: 'center' }}>Найти экскурсию</Text>
             <Button title="Поиск" onPress={() => {} } />
         </View>
     )

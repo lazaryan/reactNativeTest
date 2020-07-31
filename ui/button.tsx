@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components/native'
+
 import theme, { Theme } from '@theme'
+import Text from './text'
 
 export interface Props {
     theme?: Theme,
@@ -38,6 +40,6 @@ Component.defaultProps = defaultProps
 
 export const Container = styled.View`${(props: Props) => context.styles.container}`;
 export const Button = styled.TouchableOpacity`${(props: ButtonProps) => context.styles.button}`;
-export const ButtonText = styled.Text`${(props: Props) => context.styles.text}`;
+export const ButtonText = styled(Text)`${(props: Props) => context.styles.text}`;
 
 export default Component

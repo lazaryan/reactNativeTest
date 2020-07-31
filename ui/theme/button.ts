@@ -10,11 +10,12 @@ export interface ButtonStyle {
 export const container = css`
     justify-content: center;
     align-items: center;
+    margin: 10px 0;
 `
 
 export const button = css`
     border-radius: 25px; 
-    background-color: #2ED514;
+    background-color: #36D268;
     padding: 12px;
     width: 200px;
 `
