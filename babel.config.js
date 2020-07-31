@@ -5,7 +5,8 @@ module.exports = {
       "root": ["./"],
       "alias": {
         "@ui": "./ui",
-        "@theme": "./ui/theme"
+        "@theme": "./ui/theme",
+        "@store": "./store",
       }
     }]
   ]

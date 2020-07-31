@@ -11,7 +11,8 @@
     "baseUrl": "./",
     "paths": {
       "@ui": ["./ui/index.ts"],
-      "@theme": ["./ui/theme/index.ts"]
+      "@theme": ["./ui/theme/index.ts"],
+      "@store": ["./store/index.ts"]
     }
   }
 }
