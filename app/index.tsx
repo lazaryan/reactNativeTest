@@ -14,8 +14,10 @@ import { ThemeProvider } from 'styled-components/native'
 
 import theme from '@theme'
 import store from '@store'
+import { Text } from '@ui'
 
 import Home from './home'
+import Items from './items'
 
 const Stack = createStackNavigator();
 
@@ -41,6 +43,11 @@ const App: React.SFC = () => {
                 height: 0
               }
             }}
+          />
+          <Stack.Screen
+            name="Items"
+            component={Items}
+            options={{ title: '' }}
           />
         </Stack.Navigator>
       </NavigationContainer> 

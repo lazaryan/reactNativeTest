@@ -7,7 +7,7 @@ import theme, { Theme } from '@theme'
 export interface Props {
     theme?: Theme,
     style?: any,
-    styles?: Theme['Image'],
+    styles?: Theme['image'],
     type?: 'image' | 'svg'
     url: string
 }

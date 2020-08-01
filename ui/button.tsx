@@ -6,7 +6,7 @@ import Text from './text'
 
 export interface Props {
     theme?: Theme,
-    styles?: Theme['Button']
+    styles?: Theme['button']
 }
 
 export interface ButtonProps extends Props {
