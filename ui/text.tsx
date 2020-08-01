@@ -5,7 +5,7 @@ import theme, { Theme } from '@theme'
 export interface Props {
     theme?: Theme,
     style?: any,
-    styles?: Theme['Text'],
+    styles?: Theme['text'],
     children: string
 }
 

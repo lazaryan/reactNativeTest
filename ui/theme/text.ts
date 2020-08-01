@@ -25,7 +25,6 @@ export default {
         container: css`
             ${container}
 
-            flex: 1;
             justify-content: center;
         `,
         text: css`

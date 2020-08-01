@@ -1,3 +1,5 @@
+import { mockResponseStore } from './mock'
+
 export const store = {
     state: [],
     reducers: {
@@ -6,7 +8,7 @@ export const store = {
     effects: dispatch => ({
         async getState() {
             await new Promise(resolve => setTimeout(resolve, 1000))
-            dispatch.store.setState([1, 2, 3])
+            return dispatch.store.setState(mockResponseStore.data)
         }
     })
 }
